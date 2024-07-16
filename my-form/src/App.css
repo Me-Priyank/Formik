@@ -1,0 +1,149 @@
+.App {
+  margin: 20px;
+  width: 47%;
+  border: 2px solid black;
+  text-align: left;
+}
+
+.App-logo {
+  height: 80vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  justify-content: flex-start;  
+  font-size: calc(1px + 1.5vmin);
+  color: rgb(0, 0, 0);
+  padding:30px;  
+}
+
+.App-link {
+  color: #f17108;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form-row {
+  font-weight: 600;
+  display: flex;
+  gap: 20px; 
+}
+
+.form-group {
+  position: relative;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.form-group input::placeholder {
+  color: #999; 
+}
+
+.form-row2 {
+  margin-top: 20px;
+  font-weight: 600;
+  display: flex;
+  gap: 20px; 
+}
+
+.form-group2 {
+  position: relative;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.form-group2 input {
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.form-group2 input::placeholder {
+  color: #999; 
+}
+
+.gender-group {
+  
+  display: flex;
+  gap: 10px;
+}
+
+.gender-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; 
+  border: 2px solid transparent; 
+   
+}
+
+.gender-label:hover {
+  border-color: #007bff;
+  color: #007bff; 
+}
+
+.gender-input {
+  
+  display: none;
+}
+
+.gender-input:checked + .gender-label {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.gender-input:checked + .gender-label::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  z-index: -1; 
+}
+
+.form-divider {
+  width: 90%;
+  border-top: 2px dashed #a39f9f; 
+  margin: 20px 0; 
+}
+
