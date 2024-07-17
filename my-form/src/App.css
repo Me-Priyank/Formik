@@ -124,7 +124,7 @@
 }
 
 .gender-input:checked + .gender-label {
-  background-color: #007bff;
+  background-color: #0368d3;
   color: white;
   border: 2px solid transparent;
 }
@@ -137,8 +137,9 @@
   right: -2px;
   bottom: -2px;
   border-radius: inherit;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  z-index: -1; 
+  background: linear-gradient(to right, #2394f7, #01abb4);
+  z-index: -1;
+   
 }
 
 .form-divider {
